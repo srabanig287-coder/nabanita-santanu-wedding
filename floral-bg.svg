@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf2"/><stop offset="1" stop-color="#f3ddd3"/></linearGradient>
+ <g id="flower" stroke="#b77a69" stroke-width="2" fill="#f8e8dc" opacity=".6">
+  <ellipse cx="0" cy="-32" rx="17" ry="31"/><ellipse cx="0" cy="-32" rx="17" ry="31" transform="rotate(45)"/><ellipse cx="0" cy="-32" rx="17" ry="31" transform="rotate(90)"/><ellipse cx="0" cy="-32" rx="17" ry="31" transform="rotate(135)"/><circle r="13" fill="#d4ac66" stroke="#c79b50"/>
+ </g>
+ <g id="leaf" fill="#a8a978" stroke="#a8a978" stroke-width="2" opacity=".55"><path d="M0 0 C-35 -28 -43 -60 -5 -70 C18 -42 18 -18 0 0Z"/><path d="M0 0 C35 -28 43 -60 5 -70 C-18 -42 -18 -18 0 0Z"/></g>
+</defs>
+<rect width="1200" height="1600" fill="url(#paper)"/>
+<g transform="translate(80 80) scale(1.7)"><use href="#flower"/><use href="#leaf" transform="translate(38 35) rotate(25)"/></g>
+<g transform="translate(1110 260) scale(1.25)"><use href="#flower"/><use href="#leaf" transform="translate(-30 35) rotate(-25)"/></g>
+<g transform="translate(110 1370) scale(1.5)"><use href="#flower"/><use href="#leaf" transform="translate(35 35) rotate(25)"/></g>
+<g transform="translate(1100 1510) scale(1.8)"><use href="#flower"/><use href="#leaf" transform="translate(-35 35) rotate(-25)"/></g>
+<g fill="none" stroke="#c69b50" stroke-width="2" opacity=".22"><path d="M30 210 Q120 110 210 30"/><path d="M1170 420 Q1070 330 990 270"/><path d="M30 1220 Q120 1300 220 1390"/><path d="M1170 1180 Q1080 1290 1000 1370"/></g>
+</svg>

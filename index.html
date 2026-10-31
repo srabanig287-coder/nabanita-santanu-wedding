@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7f1727">
+<meta name="description" content="A wedding invitation celebrating Nabanita and Santanu, 21 November 2026.">
+<title>Nabanita ♥ Santanu | Wedding Invitation</title>
+<style>
+:root{--wine:#781b2b;--red:#9d2638;--gold:#c69b50;--cream:#fff8ed;--ink:#3c2524;--muted:#775d58;--rose:#f6e7df}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Noto Serif Bengali","Nirmala UI",serif;line-height:1.65}
+button,a{font:inherit}
+a{color:var(--wine)}
+.topline{height:5px;background:linear-gradient(90deg,var(--wine),var(--gold),var(--wine))}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:11px 12px;background:#fff8edf2;border-bottom:1px solid #e8d8c2;backdrop-filter:blur(10px)}
+nav a{text-decoration:none;font-size:.9rem;color:var(--wine)}
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:55px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 10%,rgba(255,253,247,.97) 0%,rgba(248,233,223,.94) 58%,rgba(240,215,203,.96) 100%),url('floral-bg.svg') center/cover no-repeat}
+.hero:before,.hero:after{content:"❧";position:absolute;color:#c69b5070;font-size:9rem;line-height:1;pointer-events:none;z-index:0}
+.hero:before{top:15px;left:-15px;transform:rotate(-25deg)}
+.hero:after{bottom:5px;right:-15px;transform:rotate(155deg)}
+.frame{width:min(100%,720px);padding:34px 20px;border:1px solid var(--gold);outline:1px solid #c69b5050;outline-offset:7px;position:relative;z-index:1;background:rgba(255,250,242,.72);box-shadow:0 18px 60px #6b1b2812}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-size:.72rem}
+.hero h1{font-size:clamp(2.8rem,10vw,5.7rem);font-weight:normal;line-height:1.08;margin:20px 0 8px;color:var(--wine)}
+.amp{color:var(--gold);font-style:italic}
+.hero .bengali{font-size:clamp(1.2rem,4vw,1.8rem);color:var(--wine)}
+.date-line{margin:22px auto 8px;color:var(--muted);letter-spacing:.08em}
+.button{display:inline-block;border:1px solid var(--gold);background:var(--wine);color:#fff8ed;padding:11px 20px;border-radius:30px;text-decoration:none;cursor:pointer;margin:7px 4px;transition:transform .2s,background .2s}
+.button:hover{transform:translateY(-2px);background:var(--red)}
+.button.secondary{background:transparent;color:var(--wine)}
+main{max-width:900px;margin:auto;padding:18px 18px 55px;position:relative} main:before{content:'✿';position:absolute;top:12px;left:2px;font-size:2.5rem;color:#c69b5060;pointer-events:none} main:after{content:'❀';position:absolute;bottom:5px;right:5px;font-size:3rem;color:#9d263830;pointer-events:none}
+section{padding:48px 0;scroll-margin-top:65px;position:relative} section:nth-of-type(even){background:radial-gradient(ellipse at 0% 50%,#f5e1d966,transparent 42%),radial-gradient(ellipse at 100% 30%,#ead0b755,transparent 38%);border-radius:26px;padding-left:10px;padding-right:10px}
+.section-head{text-align:center;margin-bottom:24px}
+.kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold)}
+h2{font-size:clamp(1.7rem,5vw,2.5rem);font-weight:normal;color:var(--wine);margin:5px 0}
+.rule{width:75px;height:1px;background:var(--gold);margin:14px auto}
+.card{background:#fffdf8;border:1px solid #e6d3b8;border-radius:18px;padding:24px;box-shadow:0 10px 30px #5d20200b}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:620px;margin:25px auto}
+.countbox{background:var(--wine);color:#fff8ed;padding:17px 5px;border-radius:12px;text-align:center}
+.countbox strong{display:block;font-size:clamp(1.45rem,6vw,2.4rem);font-weight:normal;line-height:1.2}
+.countbox span{font-size:.75rem;color:#f3dcb4}
+.events{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.event{border-top:3px solid var(--gold)}
+.event .date{color:var(--red);font-weight:bold}
+.event h3{font-size:1.35rem;font-weight:normal;color:var(--wine);margin:5px 0}
+.invite-copy{white-space:pre-line;font-size:1.02rem}
+.bn{font-family:"Noto Serif Bengali","Nirmala UI","Bangla MN",Georgia,serif}
+.note{font-size:.88rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo-slot{min-height:145px;aspect-ratio:4/3;border:1px dashed #c69b50;border-radius:14px;background:linear-gradient(145deg,#f9e9df,#fffaf2);display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:var(--muted);overflow:hidden}
+.photo-slot img{width:100%;height:100%;object-fit:cover}
+.photo-slot label{cursor:pointer}
+.photo-slot input{display:none}
+.music-row{text-align:center}
+footer{text-align:center;padding:28px 18px;background:#f2e0d5;color:var(--muted);font-size:.9rem}
+footer strong{color:var(--wine);letter-spacing:.06em}
+@media(min-width:650px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.frame{padding:48px 40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.gallery-photo{margin:0;background:#fffdf8;border:1px solid #e5d7bc;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(95,36,42,.07)}
+.gallery-photo img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.gallery-photo figcaption{padding:12px 13px;color:#6f2633;font-size:.95rem;text-align:center}
+@media(max-width:560px){.gallery-grid{grid-template-columns:1fr;gap:14px}.gallery-photo img{max-height:580px;object-fit:cover}}
+
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<nav aria-label="Main navigation">
+<a href="#invitation">Invitation</a><a href="#countdown">Countdown</a><a href="#events">Events</a><a href="#gallery">Gallery</a>
+</nav>
+<header class="hero">
+<div class="frame">
+<div class="eyebrow">Together with our families</div>
+<div class="bengali bn">শুভ বিবাহ</div>
+<h1>Nabanita<br><span class="amp">&amp;</span><br>Santanu</h1>
+<div class="bengali bn">নবনীতা ♥ শান্তনু</div>
+<p class="date-line">SATURDAY · 21 NOVEMBER 2026 · 6:30 PM</p>
+<p class="bn">আপনাদের সাদর আমন্ত্রণ ও আশীর্বাদ প্রার্থনা করি</p>
+<a class="button" href="#invitation">Open Invitation / আমন্ত্রণ</a>
+<div><button class="button secondary" id="musicButton" type="button">▶ Play our song / গান চালান</button></div>
+<p class="note" id="musicStatus">Music starts when you tap. Add your permitted audio file as <code>song.mp3</code> beside this page.</p>
+<audio id="weddingSong" preload="none" loop src="song.mp3"></audio>
+</div>
+</header>
+<main>
+<section id="countdown">
+<div class="section-head"><div class="kicker">The day is approaching</div><h2>Countdown to forever</h2><div class="bn">শুভদিনের অপেক্ষায়</div><div class="rule"></div></div>
+<div class="countdown" aria-label="Countdown to wedding">
+<div class="countbox"><strong id="days">--</strong><span>Days</span></div>
+<div class="countbox"><strong id="hours">--</strong><span>Hours</span></div>
+<div class="countbox"><strong id="minutes">--</strong><span>Minutes</span></div>
+<div class="countbox"><strong id="seconds">--</strong><span>Seconds</span></div><noscript><p class="note" style="grid-column:1/-1;text-align:center">Please open the published website in a browser with JavaScript enabled to see the live countdown.</p></noscript>
+</div>
+<p id="countdownMessage" class="note" style="text-align:center" role="status">Wedding day: 21 November 2026 · 6:30 PM IST</p>
+</section>
+
+<section id="invitation">
+<div class="section-head"><div class="kicker">With love and blessings</div><h2>Wedding Invitation</h2><div class="bn">বিবাহের নিমন্ত্রণ</div><div class="rule"></div></div>
+<div class="card">
+<p class="bn invite-copy">সবিনয় নিবেদন,
+
+মহাশয়/মহাশয়া,
+
+হলুদ ছোঁয়ায় পবিত্র এই পত্রখানি বহন করছে শুভপরিণয়ের আনন্দময় বার্তা। সিঁদুর রাঙ্গা আকাশে কোকিলের মিষ্টি কুহুতানে ভরিয়ে দেয় গোধূলী বেলা। সানাইয়ের মিলন গান্ধারের সাথে বৈদিক মন্ত্রোচ্চারণের এক মোহময় পরিবেশে আগামী ৪ঠা অগ্রহায়ণ, ১৪৩৩ (ইং ২১শে নভেম্বর, ২০২৬) শনিবার আমাদের জ্যেষ্ঠা কন্যা কল্যাণীয়া নবনীতা জীবনসঙ্গী রূপে পেতে চলেছে রেনজুবা, পশ্চিম মেদিনীপুর নিবাসী শ্রী অলোক বরণ ভক্তা মহাশয় ও শ্রীমতী সোমা ভক্তা মহাশয়ার একমাত্র পুত্র কল্যাণীয় শান্তনুকে।
+
+হৃদয়ের গভীর আন্তরিকতায় বিনয়ভরে জানাই, উক্ত দিবসে সন্ধ্যায় নিজ বাসভবনে আয়োজিত বিবাহবাসরে আপনার/আপনাদের সহৃদয় উপস্থিতি ও আশীর্বাদে নবদম্পতির জীবন হোক সার্থক ও সুন্দরময়।
+
+পত্রদ্বারা নিমন্ত্রণের ত্রুটি মার্জনীয়। ইতি-
+
+বিনীত/বিনীতা,
+শ্রী শেখর চন্দ্র ঘোষ ও শ্রীমতী বন্দনা ঘোষ</p>
+<div class="rule"></div>
+<p class="invite-copy">With humble regards,
+
+The family of Nabanita warmly invites you to celebrate the wedding of their beloved daughter, Nabanita, with Santanu, son of Shri Alok Baran Bhakta and Smt. Soma Bhakta of Renzuba, Paschim Medinipur.
+
+Please join us for the wedding ceremony on Saturday, 21 November 2026, at 6:30 PM at our residence. Your gracious presence and blessings will make this new beginning even more special.
+
+With regards,
+Shekhar Chandra Ghosh and Vandana Ghosh</p>
+<p class="note">Family contact numbers were supplied for the printed invitation but have not been displayed on this public webpage. Add them only if you want them publicly visible.</p>
+</div>
+</section>
+
+<section id="events">
+<div class="section-head"><div class="kicker">Save the dates</div><h2>Wedding Celebrations</h2><div class="bn">অনুষ্ঠানসূচি</div><div class="rule"></div></div>
+<div class="events">
+<article class="card event"><div class="date">20 NOVEMBER 2026 · 7:00 PM</div><h3>Aiburo Bhat</h3><p class="bn">আইবুড়ো ভাত</p><p class="note">Venue: Our Sweet Home<br>Digantapally, Kalta Panchkhuri, Paschim Medinipur</p></article>
+<article class="card event"><div class="date">21 NOVEMBER 2026 · 9:30 AM</div><h3>Gaye Holud</h3><p class="bn">গায়ে হলুদ</p><p class="note">Venue: Our Sweet Home<br>Digantapally, Kalta Panchkhuri, Paschim Medinipur</p></article>
+<article class="card event"><div class="date">21 NOVEMBER 2026 · 6:30 PM</div><h3>Wedding Ceremony</h3><p class="bn">শুভ বিবাহ</p><p class="note">Venue: Our Sweet Home<br>Digantapally, Kalta Panchkhuri, Paschim Medinipur</p></article>
+</div>
+<p class="note" style="text-align:center;margin-top:15px">Please confirm whether all three events are at the same venue before sharing the website.</p>
+</section>
+
+<section id="gallery">
+<div class="section-head"><div class="kicker">A few favourite moments</div><h2>Our Gallery</h2><div class="bn">আমাদের কিছু মুহূর্ত</div><div class="rule"></div></div>
+
+<div class="gallery-grid">
+  <figure class="gallery-photo">
+    <img src="photos/couple-1.jpg" alt="Nabanita and Santanu together in traditional festive outfits" loading="lazy">
+    <figcaption>A little moment, a lifetime of memories ♥</figcaption>
+  </figure>
+  <figure class="gallery-photo">
+    <img src="photos/couple-2.jpg" alt="Nabanita and Santanu walking together outdoors" loading="lazy">
+    <figcaption>Side by side, step by step</figcaption>
+  </figure>
+  <figure class="gallery-photo">
+    <img src="photos/couple-3.jpg" alt="Nabanita and Santanu sharing a romantic lantern-lit moment" loading="lazy">
+    <figcaption>Little lights, big love</figcaption>
+  </figure>
+  <figure class="gallery-photo">
+    <img src="photos/couple-4.jpg" alt="Nabanita and Santanu smiling together in traditional attire" loading="lazy">
+    <figcaption>Our favourite kind of forever</figcaption>
+  </figure>
+</div>
+
+<p class="note" style="text-align:center">Photo previews selected here are temporary. To show photos to every guest, add the image files to the website before publishing.</p>
+</section>
+<section class="music-row">
+<div class="section-head"><div class="kicker">A little melody for the moment</div><h2>Listen with love</h2><div class="bn">ভালোবাসার সুর</div><div class="rule"></div></div>
+<p>“Khukumonir Be” was noted as your preferred song. Add an audio file you are permitted to use, named <code>song.mp3</code>, to enable it on the published site.</p>
+<button class="button" type="button" id="musicButtonBottom">▶ Play / Pause Music</button>
+</section>
+</main>
+<footer>
+<div class="bn">আপনাদের উপস্থিতি ও আশীর্বাদ একান্ত কাম্য</div>
+<p>With love, Nabanita &amp; Santanu</p>
+<strong>Made by Sana ♥</strong>
+</footer>
+<script>
+function startWeddingCountdown(){
+ const weddingTime = new Date('2026-11-21T18:30:00+05:30').getTime();
+ const ids = ['days','hours','minutes','seconds'];
+ const message = document.getElementById('countdownMessage');
+ function tick(){
+   const now = Date.now();
+   const diff = weddingTime - now;
+   if (!Number.isFinite(diff)) {
+     message.textContent = 'Wedding day: 21 November 2026 · 6:30 PM IST';
+     return;
+   }
+   if (diff <= 0) {
+     ids.forEach(id => { const el=document.getElementById(id); if(el) el.textContent='00'; });
+     message.textContent = 'The wedding day is here! শুভ বিবাহ!';
+     return;
+   }
+   const vals = {
+     days: Math.floor(diff / 86400000),
+     hours: Math.floor((diff % 86400000) / 3600000),
+     minutes: Math.floor((diff % 3600000) / 60000),
+     seconds: Math.floor((diff % 60000) / 1000)
+   };
+   Object.entries(vals).forEach(([id,value]) => {
+     const el=document.getElementById(id);
+     if(el) el.textContent=String(value).padStart(2,'0');
+   });
+   message.textContent = '21 November 2026 · 6:30 PM IST';
+ }
+ tick();
+ window.setInterval(tick, 1000);
+}
+if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', startWeddingCountdown, {once:true});
+} else {
+ startWeddingCountdown();
+}
+const audio=document.getElementById('weddingSong'),status=document.getElementById('musicStatus');
+async function toggleMusic(){
+ if(audio.paused){try{await audio.play();status.textContent='Now playing. / গান চলছে।';document.querySelectorAll('#musicButton,#musicButtonBottom').forEach(b=>b.textContent='❚❚ Pause music / গান থামান');}catch(e){status.textContent='The song file is missing or cannot be played yet. Add your audio file beside index.html and update the audio filename if needed. / গান ফাইলটি যোগ করুন।';}}
+ else{audio.pause();document.querySelectorAll('#musicButton,#musicButtonBottom').forEach(b=>b.textContent='▶ Play our song / গান চালান');status.textContent='Music paused.';}
+}
+document.getElementById('musicButton').addEventListener('click',toggleMusic);
+document.getElementById('musicButtonBottom').addEventListener('click',toggleMusic);
+document.querySelectorAll('.photo-slot input').forEach(input=>input.addEventListener('change',e=>{
+ const file=e.target.files[0];if(!file)return;const box=input.closest('.photo-slot');const img=document.createElement('img');img.alt='Selected wedding photo';img.src=URL.createObjectURL(file);box.replaceChildren(img);
+}));
+</script>
+</body>
+</html>
