@@ -224,5 +224,42 @@ document.querySelectorAll('.photo-slot input').forEach(input=>input.addEventList
  const file=e.target.files[0];if(!file)return;const box=input.closest('.photo-slot');const img=document.createElement('img');img.alt='Selected wedding photo';img.src=URL.createObjectURL(file);box.replaceChildren(img);
 }));
 </script>
+
+<script>
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .petal {
+      position: fixed;
+      top: -30px;
+      z-index: 999;
+      pointer-events: none;
+      color: #b72e4b;
+      opacity: .65;
+      animation: petal-fall linear forwards;
+    }
+    @keyframes petal-fall {
+      0% { transform: translate3d(0,-10px,0) rotate(0deg); }
+      100% { transform: translate3d(45px,110vh,0) rotate(320deg); }
+    }
+  `;
+  document.head.appendChild(style);
+
+  function makePetal() {
+    const petal = document.createElement('span');
+    petal.className = 'petal';
+    petal.textContent = Math.random() > .5 ? '🌸' : '🪷';
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.fontSize = (10 + Math.random() * 9) + 'px';
+    petal.style.animationDuration = (8 + Math.random() * 6) + 's';
+    document.body.appendChild(petal);
+    setTimeout(() => petal.remove(), 15000);
+  }
+
+  setInterval(makePetal, 1000);
+})();
+</script>
 </body>
 </html>
